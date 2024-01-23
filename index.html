@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="font pr-3 lg:max-w-screen-xl mx-auto">
+<body class="font  max-w-screen-xl mx-auto">
     <!-- Header section starts here -->
     <header>
         <section>
@@ -43,7 +43,7 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</a>
+                  <a class="btn p-0 btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal gap-3 px-1">
@@ -54,7 +54,7 @@
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-5">
+                <div class="navbar-end p-0  m-0 gap-5">
                     <div><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div><a class="btn bg-red-500 text-white px-6 py-2 font-bold">Get Ticket</a></div>
                 </div>
@@ -62,9 +62,47 @@
         </section>
     </header>
     <!-- Header section ends here -->
-
    <!-- ============================================================ -->
-    <main></main>
+
+
+    <!-- Main section starts here -->
+    <main>
+          <!-- Banner -->
+          <section class="mt-7 mb-7">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full h-3/6 ">
+                  <img src="./Images/1.png" class="w-full rounded-xl" />
+                  <div class="absolute transform left-16 top-3/4">
+                    <a href="#slide4" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute transform left-16 top-3/4">
+                    <a href="#slide1" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full h-3/6 ">
+                    <img src="./Images/1.png" class="w-full rounded-xl" />
+                    <div class="absolute transform left-16 top-3/4">
+                      <a href="#slide2" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
+                      <a href="#slide4" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                    </div>
+                  </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute transform left-16 top-3/4">
+                    <a href="#slide3" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  </div>
+                </div>
+              </div>
+          </section>
+    </main>
+        <!-- Header section ends here -->
+   <!-- ============================================================ -->
     <footer></footer>
 </body>
 </html>
