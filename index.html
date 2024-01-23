@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="font max-w-screen-xl mx-auto">
+<body class="font max-w-sm mx-auto lg:max-w-screen-xl">
     <!-- Header section starts here -->
     <header>
         <section>
@@ -55,7 +55,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end p-0  m-0 gap-5">
-                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div><a class="btn bg-red-500 text-white px-6 py-2 font-bold hover:bg-blue-500">Get Ticket</a></div>
                 </div>
               </div>
@@ -72,30 +72,32 @@
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full h-3/6 ">
                   <img src="./Images/1.png" class="w-full rounded-xl" />
-                  <div class="absolute transform left-16 top-3/4">
-                    <a href="#slide4" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
-                    <a href="#slide2" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  <div class="absolute right-24 bottom-24 ">
+                    <a href="#slide4" class="btn btn-circle bg-zinc-500 text-white border-0">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-zinc-500 text-white border-0">❯</a>
                   </div>
+
+                  <!-- slide -->
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute transform left-16 top-3/4">
-                    <a href="#slide1" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
-                    <a href="#slide3" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full rounded-xl" />
+                  <div class="absolute right-24 bottom-24">
+                    <a href="#slide1" class="btn btn-circle bg-zinc-500 text-white border-0">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-zinc-500 text-white border-0">❯</a>
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full h-3/6 ">
                     <img src="./Images/1.png" class="w-full rounded-xl" />
-                    <div class="absolute transform left-16 top-3/4">
-                      <a href="#slide2" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
-                      <a href="#slide4" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                    <div class="absolute right-24 bottom-24">
+                        <a href="#slide2" class="btn btn-circle bg-zinc-500 text-white border-0">❮</a> 
+                        <a href="#slide4" class="btn btn-circle bg-zinc-500 text-white border-0">❯</a>
                     </div>
                   </div> 
                 <div id="slide4" class="carousel-item relative w-full">
-                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute transform left-16 top-3/4">
-                    <a href="#slide3" class="btn btn-circle bg-zinc-800 text-white border-0">❮</a> 
-                    <a href="#slide1" class="btn btn-circle bg-zinc-800 text-white border-0">❯</a>
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full rounded-xl " />
+                  <div class="absolute right-24 bottom-24">
+                    <a href="#slide3" class="btn btn-circle bg-zinc-500 text-white border-0">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-zinc-500 text-white border-0">❯</a>
                   </div>
                 </div>
               </div>
@@ -285,12 +287,75 @@
                 </div>
           </section>
           <!-- ======================================================= -->
-          <!-- clients starts -->
+          <!-- clients Question section starts -->
           <section>
             <div>
                 <div class="p-12 text-center mb-16 border-y-2 border-dashed">
                     <h2 class="text-4xl font-extrabold pb-4 text-neutral-800">Clients Question</h2>
                     <p class="px-2 lg:px-60 font-medium text-gray-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.   </p>
+                </div>
+            </div>
+
+            <div class="flex gap-10 border-2 rounded-lg p-6 mb-20">
+                <div>
+                    <img src="./Images/11.png" alt="" class="h-auto">
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold pb-3">Our Equipment</h5>
+                    <p class="text-gray-500 pr-60 mb-7">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+
+                    <!-- Accordian-1 -->
+                    <div class="collapse collapse-plus border-t-2 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-lg font-extrabold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                    </div>
+                    <!-- Accordian-2 -->
+                    <div class="collapse collapse-plus border-t-2 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-lg font-extrabold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                    </div>
+                    <!-- Accordian-3 -->
+                    <div class="collapse collapse-plus border-t-2 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-lg font-extrabold">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                    </div>
+                    <!-- Accordian-4 -->
+                    <div class="collapse collapse-plus border-t-2 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-lg font-extrabold">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                    </div>
+                    <!-- Accordian-5 -->
+                    <div class="collapse collapse-plus border-t-2 rounded-none">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-lg font-extrabold">
+                            Pricings
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
           </section>
